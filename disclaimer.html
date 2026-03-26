@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Disclaimer • The Active Duty Academic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="top">
+    <div class="container container--wide">
+      <div class="nav-inner">
+        <a href="index.html" class="site-logo">
+          <!-- If you use an SVG logo on index, copy it here -->
+          <div class="site-logo__text">
+            THE ACTIVE DUTY ACADEMIC
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="guides.html">Guides</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="disclaimer.html" class="active">Disclaimer</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <!-- optional icon; keep consistent with index.html -->
+            ☾
+          </button>
+          <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DISCLAIMER HERO -->
+  <section class="about-hero">
+    <div class="container container--narrow">
+      <h1>Disclaimer</h1>
+      <p>
+        Straightforward degree guidance for active-duty service members, shared for general information only —
+        not official counseling, legal advice, or any government position.
+      </p>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER BODY -->
+  <main>
+    <section class="section">
+      <div class="container container--narrow post-content">
+        <h2>Not an official military or government site</h2>
+        <p>
+          The Active Duty Academic is a personal project and is not affiliated with, endorsed by, or an official
+          communication of the Department of Defense, any military service branch, the Department of Veterans
+          Affairs, or any U.S. government agency.
+        </p>
+        <p>
+          Any references to specific policies, programs, or benefits (such as Tuition Assistance, the GI Bill, or
+          federal financial aid) are based on publicly available information and personal experience and may not
+          reflect the most current official guidance.
+        </p>
+
+        <h2>No legal, financial, or professional advice</h2>
+        <p>
+          The information on this site is for general educational purposes only. It is not legal advice, financial
+          advice, tax advice, or individualized professional counseling.
+        </p>
+        <p>
+          You should confirm details with your command, your education office, the Department of Veterans Affairs,
+          your school, or a qualified professional before making decisions that affect your career, benefits, or
+          finances.
+        </p>
+
+        <h2>Information changes over time</h2>
+        <p>
+          Military education policies, VA benefits, school requirements, and financial aid rules change frequently.
+          While I aim to keep content accurate and up to date, I cannot guarantee that every guide or example
+          reflects the latest rules or your specific situation.
+        </p>
+        <p>
+          You are responsible for validating critical information with official sources before acting on it.
+        </p>
+
+        <h2>No guarantees of outcomes</h2>
+        <p>
+          Examples, estimates, and scenarios on this site are illustrative only. Your results will depend on your
+          branch, rating/MOS, contract, prior credits, school policies, and personal choices.
+        </p>
+        <p>
+          Nothing on this site guarantees that you will be accepted to a particular school, receive specific
+          benefits, complete a degree on a given timeline, or achieve any particular career outcome.
+        </p>
+
+        <h2>External links and references</h2>
+        <p>
+          This site may link to third‑party websites, tools, or resources. These links are provided for
+          convenience and do not constitute an endorsement or responsibility for the content, policies, or accuracy
+          of those external sites.
+        </p>
+
+        <h2>Your responsibility</h2>
+        <p>
+          By using this site, you agree that you are solely responsible for how you interpret and apply the
+          information provided and that you will seek appropriate official or professional guidance when needed.
+        </p>
+
+        <p class="text-muted" style="margin-top: var(--space-8); font-size: var(--text-sm);">
+          If you spot an error or out‑of‑date information, you can reach out through the Contact page so it can be
+          corrected.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container container--wide footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <div class="site-logo__text">
+            THE ACTIVE DUTY ACADEMIC
+          </div>
+        </a>
+        <p>
+          Straightforward degree guidance for active-duty service members. Real talk, clear steps, no fluff.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="guides/ta-vs-gi-bill.html">TA vs. GI Bill</a></li>
+          <li><a href="guides/school-selection.html">School Selection</a></li>
+          <li><a href="guides/free-credits.html">Free Credits</a></li>
+          <li><a href="guides/fafsa-aid.html">FAFSA &amp; Aid</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container container--wide footer-bottom">
+      <p>&copy; <span id="year"></span> The Active Duty Academic. All rights reserved.</p>
+      <p>Not an official Department of Defense or U.S. government website.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple year updater
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Basic mobile nav toggle (match index.html behavior if you already have JS there)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
