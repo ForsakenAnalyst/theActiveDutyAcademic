@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="">
 <head>
+  <meta name="generator" content="Perplexity Computer">
+  <meta name="author" content="Perplexity Computer">
+  <meta property="og:see_also" content="https://www.perplexity.ai/computer">
+  <link rel="author" href="https://www.perplexity.ai/computer">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Disclaimer • The Active Duty Academic</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Active Duty Academic | Degree Guidance for Service Members</title>
+  <meta
+    name="description"
+    content="Straightforward degree guidance for active-duty service members. Navigate TA, GI Bill, school selection, and more without the runaround."
+  />
+
+  <meta property="og:title" content="The Active Duty Academic" />
+  <meta
+    property="og:description"
+    content="Straightforward degree guidance for active-duty service members."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://theactivedutyacademic.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Active Duty Academic",
+      "url": "https://theactivedutyacademic.com",
+      "description": "Degree guidance for active-duty service members",
+      "creator": {
+        "@type": "SoftwareApplication",
+        "name": "Perplexity Computer",
+        "url": "https://www.perplexity.ai/computer"
+      }
+    }
+  </script>
 </head>
 <body>
-
-  <!-- HEADER (exact same as index.html, just mark Disclaimer active) -->
-  <header class="site-header" id="top">
-    <div class="container container--wide">
-      <div class="nav-inner">
-        <a href="index.html" class="site-logo">
-          <div class="site-logo__text">THE ACTIVE DUTY ACADEMIC</div>
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <!-- Wordmark logo (name only) -->
+        <a href="index.html" class="site-logo" aria-label="The Active Duty Academic Home">
+          <span class="site-logo-wordmark">The Active Duty Academic</span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="guides.html">Guides</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="disclaimer.html" class="active">Disclaimer</a>
-        </nav>
+        <!-- Nav links -->
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
+        <!-- Actions (no theme toggle, just mobile menu) -->
         <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
-          <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">☰</button>
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
