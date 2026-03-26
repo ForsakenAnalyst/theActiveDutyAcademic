@@ -1488,3 +1488,20 @@ button,
     transform: none;
   }
 }
+/* === HEADER SIZE TWEAKS ONLY === */
+
+/* Make header a bit taller */
+.site-header {
+  padding-block: 0.9rem;
+}
+
+/* Make the site title a bit bigger (logo text) */
+.site-logo__text {
+  font-size: var(--text-base);
+}
+
+/* Make nav links slightly bigger and spaced out more */
+.nav-links a {
+  font-size: var(--text-sm);
+  margin-left: 1.75rem;
+}
