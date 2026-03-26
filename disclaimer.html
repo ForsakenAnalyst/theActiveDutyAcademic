@@ -8,15 +8,12 @@
 </head>
 <body>
 
-  <!-- SITE HEADER -->
+  <!-- HEADER (exact same as index.html, just mark Disclaimer active) -->
   <header class="site-header" id="top">
     <div class="container container--wide">
       <div class="nav-inner">
         <a href="index.html" class="site-logo">
-          <!-- If you use an SVG logo on index, copy it here -->
-          <div class="site-logo__text">
-            THE ACTIVE DUTY ACADEMIC
-          </div>
+          <div class="site-logo__text">THE ACTIVE DUTY ACADEMIC</div>
         </a>
 
         <nav class="nav-links" aria-label="Primary">
@@ -28,19 +25,14 @@
         </nav>
 
         <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Toggle color theme">
-            <!-- optional icon; keep consistent with index.html -->
-            ☾
-          </button>
-          <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">
-            ☰
-          </button>
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+          <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">☰</button>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- DISCLAIMER HERO -->
+  <!-- TOP STRIP / HERO STYLE LIKE ABOUT PAGE -->
   <section class="about-hero">
     <div class="container container--narrow">
       <h1>Disclaimer</h1>
@@ -51,7 +43,7 @@
     </div>
   </section>
 
-  <!-- DISCLAIMER BODY -->
+  <!-- MAIN DISCLAIMER CONTENT -->
   <main>
     <section class="section">
       <div class="container container--narrow post-content">
@@ -100,9 +92,9 @@
 
         <h2>External links and references</h2>
         <p>
-          This site may link to third‑party websites, tools, or resources. These links are provided for
-          convenience and do not constitute an endorsement or responsibility for the content, policies, or accuracy
-          of those external sites.
+          This site may link to third‑party websites, tools, or resources. These links are provided for convenience
+          and do not constitute an endorsement or responsibility for the content, policies, or accuracy of those
+          external sites.
         </p>
 
         <h2>Your responsibility</h2>
@@ -119,14 +111,12 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (same as index, with Disclaimer link) -->
   <footer class="site-footer">
     <div class="container container--wide footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="site-logo">
-          <div class="site-logo__text">
-            THE ACTIVE DUTY ACADEMIC
-          </div>
+          <div class="site-logo__text">THE ACTIVE DUTY ACADEMIC</div>
         </a>
         <p>
           Straightforward degree guidance for active-duty service members. Real talk, clear steps, no fluff.
@@ -160,10 +150,8 @@
   </footer>
 
   <script>
-    // Simple year updater
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Basic mobile nav toggle (match index.html behavior if you already have JS there)
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     if (menuToggle && navLinks) {
