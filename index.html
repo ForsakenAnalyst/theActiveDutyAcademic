@@ -50,20 +50,18 @@
   <header class="site-header" id="site-header">
     <div class="container">
       <nav class="nav-inner" aria-label="Main navigation">
-        <!-- Wordmark logo (name only) -->
         <a href="index.html" class="site-logo" aria-label="The Active Duty Academic Home">
           <span class="site-logo-wordmark">The Active Duty Academic</span>
         </a>
 
-        <!-- Nav links -->
         <ul class="nav-links" id="nav-links" role="list">
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="guides.html">Guides</a></li>
+          <!-- Scrolls down to the core guides section on this page -->
+          <li><a href="index.html#core-guides">Guides</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
 
-        <!-- Actions (no theme toggle, just mobile menu) -->
         <div class="nav-actions">
           <button
             class="menu-toggle"
@@ -82,7 +80,7 @@
   </header>
 
   <main>
-    <!-- HERO (no stat cards) -->
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-inner">
@@ -95,7 +93,8 @@
             </p>
 
             <div class="hero-actions">
-              <a href="guides.html" class="btn btn-primary">Browse the Guides</a>
+              <!-- Scrolls to guides section on this page -->
+              <a href="#core-guides" class="btn btn-primary">Browse the Guides</a>
               <a href="about.html" class="btn btn-outline">Who This Is For</a>
             </div>
           </div>
@@ -103,7 +102,7 @@
       </div>
     </section>
 
-    <!-- TRUST BAR (single line) -->
+    <!-- TRUST BAR -->
     <div class="trust-bar">
       <div class="container">
         <p class="trust-single-line">
@@ -113,117 +112,117 @@
     </div>
 
     <!-- CORE GUIDES -->
-   <section class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">Start Here</span>
-      <h2 class="section-title">The Guides That Actually Matter</h2>
-      <p class="section-subtitle">
-        Core guides that walk you through the biggest decisions you’ll make about school while you’re on active duty. Start with these, then go deeper as needed.
-      </p>
-    </div>
-
-    <div class="guides-grid">
-      <!-- Featured card -->
-      <article class="guide-card guide-card--featured reveal">
-        <div>
-          <div class="guide-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-              <path d="M2 17l10 5 10-5"></path>
-              <path d="M2 12l10 5 10-5"></path>
-            </svg>
-          </div>
-        </div>
-        <div>
-          <span class="guide-card-tag">Foundation</span>
-          <h3 class="guide-card-title">TA vs. GI Bill: Which Should You Use First?</h3>
-          <p class="guide-card-excerpt">
-            The order you use Tuition Assistance and the GI Bill can be worth tens of thousands of dollars over a career.
-            This guide lays out a simple sequence most enlisted service members can follow, plus the exceptions.
+    <section class="section" id="core-guides">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Start Here</span>
+          <h2 class="section-title">The Guides That Actually Matter</h2>
+          <p class="section-subtitle">
+            Core guides that walk you through the biggest decisions you’ll make about school while you’re on active duty.
+            Start with these, then go deeper as needed.
           </p>
-          <a href="posts/ta-vs-gi-bill.html" class="guide-card-link">
-            Read the guide
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
         </div>
-      </article>
 
-      <!-- Card 2 -->
-      <article class="guide-card reveal">
-        <div class="guide-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-            <path d="M8 21h8M12 17v4"></path>
-          </svg>
+        <div class="guides-grid">
+          <!-- Featured card: TA vs GI Bill -->
+          <article class="guide-card guide-card--featured reveal">
+            <div>
+              <div class="guide-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <span class="guide-card-tag">Foundation</span>
+              <h3 class="guide-card-title">TA vs. GI Bill: Which Should You Use First?</h3>
+              <p class="guide-card-excerpt">
+                The order you use Tuition Assistance and the GI Bill can be worth tens of thousands of dollars over a career.
+                This guide lays out a simple sequence most enlisted service members can follow, plus the exceptions.
+              </p>
+              <!-- Link to your article file inside the Posts folder -->
+              <a href="Posts/ta-vs-gi-bill.html" class="guide-card-link">
+                Read the guide
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Future guides (still pointing to placeholder anchors / future pages) -->
+          <article class="guide-card reveal">
+            <div class="guide-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <path d="M8 21h8M12 17v4"></path>
+              </svg>
+            </div>
+            <span class="guide-card-tag">Tuition Assistance</span>
+            <h3 class="guide-card-title">How Tuition Assistance Actually Works, Step by Step</h3>
+            <p class="guide-card-excerpt">
+              What TA will and won’t pay for, how the dollar caps work, when you need command approval, and what happens if you drop or fail a class.
+              This is the process your education office should walk you through, in plain language.
+            </p>
+            <a href="#" class="guide-card-link">
+              Read the guide
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </article>
+
+          <article class="guide-card reveal">
+            <div class="guide-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <span class="guide-card-tag">School Selection</span>
+            <h3 class="guide-card-title">How to Choose a School That Fits Active Duty</h3>
+            <p class="guide-card-excerpt">
+              Online vs. in-person, eight‑week vs. sixteen‑week terms, deployment‑friendly policies, and which “military‑friendly” claims actually matter.
+              Use this to build a short list that works with watches, duty, and PCS.
+            </p>
+            <a href="#" class="guide-card-link">
+              Read the guide
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </article>
+
+          <article class="guide-card reveal">
+            <div class="guide-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <span class="guide-card-tag">Credits &amp; Testing</span>
+            <h3 class="guide-card-title">Earning Credits While You Serve: CLEP, DSST, and JST</h3>
+            <p class="guide-card-excerpt">
+              How to turn your training, PME, and test scores into actual college credits, and when it makes sense to knock out classes with CLEP or DSST instead of burning TA.
+            </p>
+            <a href="#" class="guide-card-link">
+              Read the guide
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </article>
         </div>
-        <span class="guide-card-tag">Tuition Assistance</span>
-        <h3 class="guide-card-title">How Tuition Assistance Actually Works, Step by Step</h3>
-        <p class="guide-card-excerpt">
-          What TA will and won’t pay for, how the dollar caps work, when you need command approval, and what happens if you drop or fail a class.
-          This is the process your education office should walk you through, in plain language.
-        </p>
-        <a href="guides.html#ta" class="guide-card-link">
-          Read the guide
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </article>
 
-      <!-- Card 3 -->
-      <article class="guide-card reveal">
-        <div class="guide-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"></path>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-          </svg>
+        <div style="margin-top: var(--space-10); text-align: center;">
+          <a href="#core-guides" class="btn btn-outline">View All Guides</a>
         </div>
-        <span class="guide-card-tag">School Selection</span>
-        <h3 class="guide-card-title">How to Choose a School That Fits Active Duty</h3>
-        <p class="guide-card-excerpt">
-          Online vs. in-person, eight‑week vs. sixteen‑week terms, deployment‑friendly policies, and which “military‑friendly” claims actually matter.
-          Use this to build a short list that works with watches, duty, and PCS.
-        </p>
-        <a href="guides.html#schools" class="guide-card-link">
-          Read the guide
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </article>
+      </div>
+    </section>
 
-      <!-- Card 4 -->
-      <article class="guide-card reveal">
-        <div class="guide-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-        </div>
-        <span class="guide-card-tag">Credits &amp; Testing</span>
-        <h3 class="guide-card-title">Earning Credits While You Serve: CLEP, DSST, and JST</h3>
-        <p class="guide-card-excerpt">
-          How to turn your training, PME, and test scores into actual college credits, and when it makes sense to knock out classes with CLEP or DSST instead of burning TA.
-        </p>
-        <a href="guides.html#credits" class="guide-card-link">
-          Read the guide
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </article>
-    </div>
-
-    <div style="margin-top: var(--space-10); text-align: center;">
-      <a href="guides.html" class="btn btn-outline">View All Guides</a>
-    </div>
-  </div>
-</section>
-
-    <!-- ABOUT STRIP (updated copy) -->
+    <!-- ABOUT STRIP -->
     <section class="section" style="background: var(--color-surface-offset); border-block: 1px solid var(--color-divider);">
       <div class="container">
         <div class="about-strip reveal">
@@ -245,8 +244,6 @@
         </div>
       </div>
     </section>
-
-    <!-- (Newsletter CTA removed) -->
   </main>
 
   <!-- FOOTER -->
@@ -261,13 +258,14 @@
         </div>
 
         <div class="footer-col">
-   <h4 class="footer-heading">Guides</h4>
-<ul class="footer-links">
-  <li><a href="#ta-vs-gi-bill">TA vs. GI Bill</a></li>
-  <li><a href="#school-selection">School Selection</a></li>
-  <li><a href="#free-credits">Free Credits</a></li>
-  <li><a href="#fafsa-aid">FAFSA & Aid</a></li>
-</ul>
+          <h4 class="footer-heading">Guides</h4>
+          <ul class="footer-links">
+            <!-- Link into Posts folder -->
+            <li><a href="Posts/ta-vs-gi-bill.html">TA vs. GI Bill</a></li>
+            <li><a href="#">School Selection</a></li>
+            <li><a href="#">Free Credits</a></li>
+            <li><a href="#">FAFSA &amp; Aid</a></li>
+          </ul>
         </div>
 
         <div class="footer-col">
